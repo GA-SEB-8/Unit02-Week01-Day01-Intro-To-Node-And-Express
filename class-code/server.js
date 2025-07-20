@@ -2,11 +2,18 @@
 
 // 2. npm install express
 
+// 3. const express = require("express")
+
+// 4. const app = express()
+
+
+
+
 // npm install name-of-package
 
 // to import package
 
-const colors = require('colors')
-const express = require("express")
+const express = require("express") //importing express package
 
-console.log(colors.rainbow("Welcome to my Appliation"))
+const app = express() // creates a express application
+
