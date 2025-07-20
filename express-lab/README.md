@@ -115,3 +115,9 @@ Use the built-in Express middleware to serve static files like CSS and images. A
 ```js
 app.use(express.static('public'));
 ```
+
+
+
+### Step 10: add a .gitignore file
+
+Create the .gitignore file and the node_modules to it
