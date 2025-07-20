@@ -22,9 +22,16 @@ const express = require("express") //importing express package
 const app = express() // creates a express application
 
 
-
+// writing routes
+// 2 arguements:
+//               1. string representing the endpoint examples: /about-me or /homepage
+//               2. A function that runs if a request is sent here
+app.get("/about",(request, response)=>{
+    response.send("<h1>Welcome I am Ali</h1>")
+})
 
 
 app.listen(3000,()=>{
     console.log("Listening on port 3000")
 })
+
