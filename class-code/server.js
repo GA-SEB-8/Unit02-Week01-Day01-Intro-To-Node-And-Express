@@ -25,7 +25,12 @@ const app = express() // creates a express application
 app.use(express.static('public')); //all static files are in the public folder
 
 
+function omarMiddleware(req,res,next){
+    console.log("You are authenticated")
+    next()
+}
 
+app.use(omarMiddleware)
 // writing routes
 // 2 arguements:
 //               1. string representing the endpoint examples: /about-me or /homepage
