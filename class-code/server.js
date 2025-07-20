@@ -29,7 +29,7 @@ const app = express() // creates a express application
 
 console.log(__dirname)
 app.get("/about",(request, response)=>{
-    response.send("<h1>Welcome I am Ali</h1>")
+    response.send(__dirname + "views/about-me.html")
 })
 
 
