@@ -26,6 +26,8 @@ const app = express() // creates a express application
 // 2 arguements:
 //               1. string representing the endpoint examples: /about-me or /homepage
 //               2. A function that runs if a request is sent here
+
+console.log(__dirname)
 app.get("/about",(request, response)=>{
     response.send("<h1>Welcome I am Ali</h1>")
 })
