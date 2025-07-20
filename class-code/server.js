@@ -22,6 +22,10 @@ const express = require("express") //importing express package
 const app = express() // creates a express application
 
 
+app.use(express.static('public')); //all static files are in the public folder
+
+
+
 // writing routes
 // 2 arguements:
 //               1. string representing the endpoint examples: /about-me or /homepage
@@ -39,6 +43,10 @@ app.get("/about",(req, res)=>{
 // the file should be in the views folder called home.html
 // it should contain an h1 that says welcome to my site [NAME]
 
+
+app.get("/",(req,res)=>{
+    res.sendFile(__dirname + "/views/home.html")
+})
 
 
 app.listen(3000,()=>{
