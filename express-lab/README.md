@@ -1,18 +1,15 @@
-Got it! Here's your updated **Node + Express Lab 1** with cleaner instructions, HTML pages moved to a `views/` folder, and clarified steps for a more guided student experience.
 
----
+# Node + Express Lab 1: Getting Started with Your First Server
 
-# 🧪 Node + Express Lab 1: Getting Started with Your First Server
-
-### 📚 Objective:
+### Objective:
 
 Build a simple Node.js + Express server that handles basic routing and serves HTML files as responses. You’ll also learn how to organize your static assets and set up your development environment.
 
 ---
 
-## ✅ Part 1: Basic Lab
+## Part 1: Basic Lab
 
-### 🔧 Step 1: Initialize the project
+### Step 1: Initialize the project
 
 Open your terminal, navigate to your project folder, and run:
 
@@ -24,7 +21,7 @@ This creates a `package.json` file with default settings.
 
 ---
 
-### 📦 Step 2: Install Express
+### Step 2: Install Express
 
 ```bash
 npm install express
@@ -32,13 +29,13 @@ npm install express
 
 ---
 
-### 📄 Step 3: Create `server.js`
+### Step 3: Create `server.js`
 
 In the root of your project folder, create a file called `server.js`.
 
 ---
 
-### 🧠 Step 4: Set up the server
+### Step 4: Set up the server
 
 Inside `server.js`:
 
@@ -50,7 +47,7 @@ Inside `server.js`:
 
 ---
 
-### 🌐 Step 5: Create 3 routes
+### Step 5: Create 3 routes
 
 Your app should respond to these routes:
 
@@ -65,9 +62,9 @@ Your app should respond to these routes:
 
 ---
 
-## 🌟 Bonus Challenge: Serve HTML and CSS Files
+## Bonus Challenge: Serve HTML and CSS Files
 
-### 📁 Step 6: Create folder structure
+### Step 6: Create folder structure
 
 Inside your project folder, create the following:
 
@@ -84,7 +81,7 @@ project/
 
 ---
 
-### 📄 Step 7: Create HTML Pages
+### Step 7: Create HTML Pages
 
 #### `views/index.html`
 
@@ -105,33 +102,16 @@ Your about page should include:
 
 ---
 
-### 🎨 Step 8: Style Your Pages
+### Step 8: Style Your Pages
 
 Create a `style.css` file in the `public/` folder and add basic styling for body text, headings, and links.
 
 ---
 
-### 🛠️ Step 9: Serve Static Files
+### Step 9: Serve Static Files
 
 Use the built-in Express middleware to serve static files like CSS and images. Add the following line to your `server.js` file **before your routes**:
 
 ```js
 app.use(express.static('public'));
 ```
-
----
-
-## ✅ Wrap-Up Checklist
-
-* [ ] Project initialized with `npm init -y`
-* [ ] Express installed with `npm install express`
-* [ ] Created a working `server.js` file
-* [ ] App listens on port 3000
-* [ ] `/test` route responds with `<p>Success!</p>`
-* [ ] `/` and `/about` routes send back full HTML pages
-* [ ] HTML files stored in a `views/` folder
-* [ ] CSS file loaded from a `public/` folder using `express.static()`
-
----
-
-Let me know if you'd like this as a Google Doc, PDF, or printable handout for your students!
