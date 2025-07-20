@@ -1,0 +1,39 @@
+import "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/static/v2/pkl/template.pkl" as Template
+
+// Add microlessons here, in the order they should be delivered
+
+concepts = new Template.Microlesson {
+  friendlyName = "Concepts"
+  dirName = "concepts"
+  type = "Content"
+  videoUrl = ""
+}
+
+fundamentals = new Template.Microlesson {
+  friendlyName = "Fundamentals"
+  dirName = "fundamentals"
+  type = "Content"
+  videoUrl = ""
+}
+
+httpMethods = new Template.Microlesson {
+  friendlyName = "HTTP Methods"
+  dirName = "http-methods"
+  type = "Content"
+  videoUrl = ""
+}
+
+anatomyOfHttpRequestResponseMessages = new Template.Microlesson {
+  friendlyName = "Anatomy of HTTP Request Response Messages"
+  dirName = "anatomy-of-http-request-response-messages"
+  type = "Content"
+  videoUrl = ""
+}
+
+sendingHttpRequestsFromTheBrowser = new Template.Microlesson {
+  friendlyName = "Sending HTTP Requests From the Browser"
+  dirName = "sending-http-requests-from-the-browser"
+  type = "Content"
+  videoUrl = ""
+}
+
