@@ -28,9 +28,17 @@ const app = express() // creates a express application
 //               2. A function that runs if a request is sent here
 
 console.log(__dirname)
-app.get("/about",(request, response)=>{
-    response.sendFile(__dirname + "/views/about-me.html")
+app.get("/about",(req, res)=>{
+    console.log("Download nodemon ")
+    res.sendFile(__dirname + "/views/about-me.html")
 })
+
+// exercise 2:
+// Create a /homepage route
+// for this route if the request is sent a file should be sent back
+// the file should be in the views folder called home.html
+// it should contain an h1 that says welcome to my site [NAME]
+
 
 
 app.listen(3000,()=>{
