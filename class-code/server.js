@@ -43,7 +43,7 @@ app.get("/about",(req, res)=>{
     res.sendFile(__dirname + "/views/about-me.html")
 })
 
-j
+
 
 // exercise 2:
 // Create a /homepage route
