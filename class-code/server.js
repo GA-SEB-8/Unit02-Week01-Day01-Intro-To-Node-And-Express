@@ -36,11 +36,14 @@ app.use(omarMiddleware)
 //               1. string representing the endpoint examples: /about-me or /homepage
 //               2. A function that runs if a request is sent here
 
-console.log(__dirname)
+
+
 app.get("/about",(req, res)=>{
     console.log("Download nodemon ")
     res.sendFile(__dirname + "/views/about-me.html")
 })
+
+j
 
 // exercise 2:
 // Create a /homepage route
@@ -57,4 +60,7 @@ app.get("/",(req,res)=>{
 app.listen(3000,()=>{
     console.log("Listening on port 3000")
 })
+
+
+
 
